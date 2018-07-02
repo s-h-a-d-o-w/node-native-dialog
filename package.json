@@ -1,0 +1,21 @@
+{
+  "name": "node-dialog",
+  "version": "1.0.0",
+  "os": [
+    "win32"
+  ],
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "winax": "^1.0.10"
+  },
+  "devDependencies": {
+    "jest": "^23.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

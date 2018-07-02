@@ -1,0 +1,12 @@
+#assets
+assets
+
+#tests
+**/*.test.js
+
+#editor settings
+.idea
+.editorconfig
+
+#yarn
+yarn.lock
