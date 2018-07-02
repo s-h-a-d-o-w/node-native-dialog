@@ -4,6 +4,9 @@
   "os": [
     "win32"
   ],
+  "description": "Display a native dialog from your Node.js app.",
+  "homepage": "https://github.com/s-h-a-d-o-w/node-dialog",
+  "author": "Andreas Opferkuch <ao@variations-of-shadow.com>",
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
@@ -17,5 +20,18 @@
   },
   "jest": {
     "testEnvironment": "node"
-  }
+  },
+  "keywords": [
+    "nodejs",
+    "gui",
+    "error",
+    "info",
+    "warning",
+    "dialog",
+    "modal",
+    "prompt",
+    "exception",
+    "window",
+    "box"
+  ]
 }

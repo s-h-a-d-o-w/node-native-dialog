@@ -6,7 +6,7 @@ const wsh = new winax.Object('WScript.Shell');
  *
  * @param {object} opts
  * @param {string} opts.msg "Body" of the dialog.
- * @param {number} opts.timeout Seconds - floating point values are rounded. (ActiveX imposes this)
+ * @param {number} opts.timeout Seconds - floating point values are rounded. (WSH imposes this)
  * @param {string} opts.title Title of the dialog.
  * @param {number} opts.icon Use constants for this. (See docs)
  * @param {number} opts.buttons Use constants for this. (See docs)
