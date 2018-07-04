@@ -9,7 +9,7 @@ a separate process for showing the dialog.
 Because of this, it also lends itself better to be used in apps that make use of 
 packaging with tools like [pkg](https://github.com/zeit/pkg).  
 
-![node-dialog Screenshot](assets/screenshots/node-dialog-win32.png?raw=true)
+![node-dialog Screenshot](https://raw.githubusercontent.com/s-h-a-d-o-w/node-native-dialog/master/assets/screenshots/node-dialog-win32.png)
 
 ## Usage
 
