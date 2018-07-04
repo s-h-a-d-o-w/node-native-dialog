@@ -1,9 +1,13 @@
 # node-dialog
 
-**PRs for macOS/Linux welcome!** (It's fine if you can't implement all the same icon or button 
-types)
+**PRs for macOS/Linux welcome!** (see [Contributing](#contributing))
 
-Display a native dialog from your Node.js app. 
+Display a native dialog from your Node.js app.
+The difference to e.g. [`dialog`](https://github.com/tomas/dialog) is that this does not spawn 
+a separate process for showing the dialog.
+
+Because of this, it also lends itself better to be used in apps that make use of 
+packaging with tools like [pkg](https://github.com/zeit/pkg).  
 
 ![node-dialog Screenshot](assets/screenshots/node-dialog-win32.png?raw=true)
 
@@ -93,3 +97,9 @@ No implementation yet.
 	RESULT_IGNORE
 	RESULT_YES
 	RESULT_NO
+
+## Contributing <a name="contributing">
+
+It's fine if you can't implement all the same icon or button types but it should use a 
+native implementation like [`winax`](https://github.com/durs/node-activex) does with 
+wrapping ActiveX objects.

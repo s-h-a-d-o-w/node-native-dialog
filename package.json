@@ -1,11 +1,11 @@
 {
-  "name": "node-dialog",
+  "name": "node-native-dialog",
   "version": "1.0.0",
   "os": [
     "win32"
   ],
   "description": "Display a native dialog from your Node.js app.",
-  "homepage": "https://github.com/s-h-a-d-o-w/node-dialog",
+  "homepage": "https://github.com/s-h-a-d-o-w/node-native-dialog.git",
   "author": "Andreas Opferkuch <ao@variations-of-shadow.com>",
   "main": "src/index.js",
   "license": "MIT",

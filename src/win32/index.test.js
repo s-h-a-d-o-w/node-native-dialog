@@ -23,13 +23,11 @@ test('Minimum sync Dialog', () => {
 	})).toEqual(1);
 });
 
-test.only('All arguments (timeout)', () => {
+test('All arguments (timeout)', () => {
 	expect(dialog.showSync({
-		//msg: 'LET THIS TIME OUT! (3 seconds)',
-		msg: 'Wow, native GUI feedback...',
+		msg: 'LET THIS TIME OUT! (3 seconds)',
 		timeout: 3,
-		//title: 'jest // node-dialog',
-		title: 'node-dialog',
+		title: 'jest // node-dialog',
 		icon: dialog.INFO,
 		buttons: dialog.YES_NO_CANCEL,
 		defaultButton: dialog.RIGHT,
