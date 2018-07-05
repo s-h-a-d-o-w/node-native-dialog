@@ -1,4 +1,4 @@
-# node-dialog
+# node-native-dialog
 
 **PRs for macOS/Linux welcome!** (see [Contributing](#contributing))
 
@@ -14,7 +14,7 @@ packaging with tools like [pkg](https://github.com/zeit/pkg).
 ## Usage
 
 ```js
-const dialog = require('node-dialog');
+const dialog = require('node-native-dialog');
 
 dialog.showSync({
 	msg: 'Execution pauses here until user dismisses dialog.',
