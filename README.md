@@ -1,3 +1,6 @@
+[![npm version](https://img.shields.io/npm/v/node-native-dialog.svg)](https://www.npmjs.com/package/node-native-dialog)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # node-native-dialog
 
 **PRs for macOS/Linux welcome!** (see [Contributing](#contributing))
