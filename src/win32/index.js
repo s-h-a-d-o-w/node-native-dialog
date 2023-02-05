@@ -13,7 +13,7 @@ const wsh = new winax.Object('WScript.Shell');
  * @param {number} opts.defaultButton Use constants for this. (See docs)
  * @returns {number} Use our constants to check for what the user chose.
  */
-const showSync = (opts) => {
+const show = (opts) => {
 	if(!opts || !opts.hasOwnProperty('msg'))
 		throw new Error('At least a message is required.');
 
@@ -31,28 +31,6 @@ const showSync = (opts) => {
 
 	return wsh.Popup(...args);
 };
-
-/**
- * Shows dialog in a non-blocking manner.
- *
- * @param {object} opts
- * @param {string} opts.msg "Body" of the dialog.
- * @param {number} opts.timeout Seconds - floating point values are rounded. (ActiveX imposes this)
- * @param {string} opts.title Title of the dialog.
- * @param {number} opts.icon Use constants for this. (See docs)
- * @param {number} opts.buttons Use constants for this. (See docs)
- * @param {number} opts.defaultButton Use constants for this. (See docs)
- * @returns {Promise<number>} Use our constants to check for what the user chose.
- */
-const show = (opts) => {
-	return new Promise((resolve) => {
-		// Make popup non-blocking
-		setTimeout(() => {
-			resolve(showSync(opts));
-		}, 1);
-	});
-};
-
 
 // Names for constants deviate from the following docs to make them multiplatform-compatible
 // https://technet.microsoft.com/en-us/library/ee156593.aspx
@@ -92,7 +70,6 @@ const results = {
 
 module.exports = {
 	show,
-	showSync,
 	...icons,
 	...buttons,
 	...defaultButton,

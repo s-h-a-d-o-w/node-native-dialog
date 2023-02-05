@@ -1,35 +1,26 @@
 const dialog = require('./index.js');
 
-test('No arguments supplied (sync)', () => {
+test('should fail if no arguments are supplied', () => {
 	expect(() => {
-		dialog.showSync();
+		dialog.show();
 	}).toThrow();
-});
-
-test('Minimum async Dialog', () => {
-	return dialog.show({
-		msg: 'Click OK (Minimum async Dialog)'
-	})
-	.then((result) => {
-		expect(result).toEqual(1);
-	});
 });
 
 // This should always be the one before timeout test, so
 // that the user is warned ahead of time
-test('Minimum sync Dialog', () => {
-	expect(dialog.showSync({
+test('minimum sync Dialog', () => {
+	expect(dialog.show({
 		msg: 'Let the next one time out! This one, simply dismiss.'
 	})).toEqual(1);
 });
 
 test('All arguments (timeout)', () => {
-	expect(dialog.showSync({
+	expect(dialog.show({
 		msg: 'LET THIS TIME OUT! (3 seconds)',
 		timeout: 3,
 		title: 'jest // node-dialog',
 		icon: dialog.INFO,
 		buttons: dialog.YES_NO_CANCEL,
 		defaultButton: dialog.RIGHT,
-	})).toEqual(-1);
+	})).toEqual(-1)
 });
