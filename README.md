@@ -1,9 +1,20 @@
+# I have decided to archive this because it occurred to me that it isn't necessary. Just use `winax` directly instead:
+
+```
+const winax = require('winax');
+const wsh = new winax.Object('WScript.Shell');
+wsh.Popup(/* ... */)
+```
+
+The API is documented here:
+- https://ss64.com/vb/popup.html
+- https://learn.microsoft.com/en-us/previous-versions/tn-archive/ee156593(v=technet.10)?redirectedfrom=MSDN
+
+
 [![npm version](https://img.shields.io/npm/v/node-native-dialog.svg)](https://www.npmjs.com/package/node-native-dialog)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-# node-native-dialog
-
-**PRs for macOS/Linux welcome!** (see [Contributing](#contributing))
+# ~~node-native-dialog~~
 
 Display a native dialog from your Node.js app.
 The difference to e.g. [`dialog`](https://github.com/tomas/dialog) is that this does not spawn
